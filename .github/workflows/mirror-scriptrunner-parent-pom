@@ -1,0 +1,34 @@
+name: Mirror scriptrunner-parent-pom
+
+on:
+  schedule:
+    # Every day at 5:30 am UTC
+    - cron: '30 5 * * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    permissions: write-all
+    steps:
+      - uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.DEPLOYMENT_KEY_SCRIPTRUNNER_PARENT_POM }}
+      - name: Mirror repository from Bitbucket
+        run: | 
+          git clone --mirror https://bitbucket.org/Adaptavist/scriptrunner-parent-pom.git
+          cd scriptrunner-samples.git
+          git remote set-url --push origin git@github.com:Adaptavist-Bitbucket-Mirror/scriptrunner-parent-pom.git
+          echo "Fetching updates from https://bitbucket.org/Adaptavist/scriptrunner-parent-pom.git"
+          git fetch -p origin
+          echo "Pushing updates to git@github.com:Adaptavist-Bitbucket-Mirror/scriptrunner-parent-pom.git"
+          git push --mirror
+      - name: Update repostitory description
+        env:
+          GH_TOKEN: ${{ secrets.SCRIPTRUNNER_PARENT_POM_UPDATE_DESCRIPTION }}
+        run: |
+          echo $GH_TOKEN
+          gh repo edit Adaptavist-Bitbucket-Mirror/scriptrunner-parent-pom --description "Updated on $(date --utc "+%Y-%m-%d %H:%M:%S") UTC from https://bitbucket.org/Adaptavist/scriptrunner-parent-pom.git"
+      
