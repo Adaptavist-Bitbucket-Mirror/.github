@@ -3,7 +3,9 @@
 This virtual organization contains mirrored repositories from [Adaptavist's Bitbucket](https://bitbucket.org/Adaptavist/).
 It is not affiliated with Adapavist.
 
-Mirroring simplifies tracking Adaptavist's changes. The mirrored repositories allow:
+Mirroring simplifies tracking changes made by Adaptavist. Especially increasing version of the `scriptrunner-parent-pom` for new versions of the [ScriptRunner Plugin](https://marketplace.atlassian.com/apps/6820/scriptrunner-for-jira?hosting=datacenter&tab=versions).
+
+The mirrored repositories allow:
 - GitHub forking.
 - Using GitHub Actions.
 - Getting daily updates.
