@@ -11,5 +11,7 @@ Mirroring simplifies tracking changes in Adaptavist's examples. The mirrored rep
 
 ## Mirrored repositories:
 
-* [scriptrunner-parent-pom](https://bitbucket.org/Adaptavist/scriptrunner-parent-pom) 
-* [scriptrunner-samples](https://bitbucket.org/Adaptavist/scriptrunner-samples) -> https://github.com/Adaptavist-Bitbucket-Mirror/scriptrunner-samples
+* [scriptrunner-parent-pom](https://github.com/Adaptavist-Bitbucket-Mirror/scriptrunner-parent-pom) from https://bitbucket.org/Adaptavist/scriptrunner-parent-pom
+* [scriptrunner-samples](https://github.com/Adaptavist-Bitbucket-Mirror/scriptrunner-samples) from https://bitbucket.org/Adaptavist/scriptrunner-samples 
+
+All repositories are updated from Adaptavist's Bitbucket daily at 5:30 am UTC.
