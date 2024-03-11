@@ -1,4 +1,5 @@
 name: Mirror scriptrunner-samples
+permissions: write-all
 
 on:
   schedule:
