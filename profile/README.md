@@ -1,10 +1,15 @@
 ## Hi there 👋
 
-This is a proxy virtual organization to mirror [Adaptavist's Bitbucket repositories](https://bitbucket.org/Adaptavist/) to [GitHub](https://github.com/Adaptavist-Bitbucket-Mirror/).
-
+This virtual organization contains mirrored repositories from [Adaptavist's Bitbucket](https://bitbucket.org/Adaptavist/).
 It is not affiliated with Adapavist.
+
+Mirroring simplifies tracking changes in Adaptavist's examples. The mirrored repositories allow:
+- GitHub forking.
+- Using GitHub Actions.
+- Getting daily updates.
+- Sending notifications when Adaptavist commits new changes on Bitbucket.
 
 ## Mirrored repositories:
 
-* [scriptrunner-parent-pom](https://bitbucket.org/Adaptavist/scriptrunner-parent-pom/src/master/)
-* [scriptrunner-samples](https://bitbucket.org/Adaptavist/scriptrunner-samples/src/master/)
+* [scriptrunner-parent-pom](https://bitbucket.org/Adaptavist/scriptrunner-parent-pom) 
+* [scriptrunner-samples](https://bitbucket.org/Adaptavist/scriptrunner-samples) -> [scriptrunner-parent-pom](https://github.com/Adaptavist-Bitbucket-Mirror/scriptrunner-samples)
