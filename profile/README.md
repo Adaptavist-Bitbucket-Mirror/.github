@@ -3,7 +3,7 @@
 This virtual organization contains mirrored repositories from [Adaptavist's Bitbucket](https://bitbucket.org/Adaptavist/).
 It is not affiliated with Adapavist.
 
-Mirroring simplifies tracking changes in Adaptavist's examples. The mirrored repositories allow:
+Mirroring simplifies tracking Adaptavist's changes. The mirrored repositories allow:
 - GitHub forking.
 - Using GitHub Actions.
 - Getting daily updates.
