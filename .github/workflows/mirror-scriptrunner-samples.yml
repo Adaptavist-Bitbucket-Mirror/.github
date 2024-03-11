@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: webfactory/ssh-agent@v0.9.0
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+          ssh-private-key: ${{ secrets.DEPLOYMENT_KEY_SCRIPTRUNNER_SAMPLES }}
       - name: Mirror repository from Bitbucket
         run: | 
           git clone --mirror https://bitbucket.org/Adaptavist/scriptrunner-samples.git
