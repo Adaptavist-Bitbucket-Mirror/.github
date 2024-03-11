@@ -6,5 +6,5 @@ It is not affiliated with Adapavist.
 
 ## Mirrored repositories:
 
-* [scriptrunner-parent-pom](https://bitbucket.org/Adaptavist/scriptrunner-parent-pom/src/master/)https://bitbucket.org/Adaptavist/scriptrunner-parent-pom/src/master/
-* [scriptrunner-samples](https://bitbucket.org/Adaptavist/scriptrunner-samples/src/master/)https://bitbucket.org/Adaptavist/scriptrunner-samples/src/master/
+* [scriptrunner-parent-pom](https://bitbucket.org/Adaptavist/scriptrunner-parent-pom/src/master/)
+* [scriptrunner-samples](https://bitbucket.org/Adaptavist/scriptrunner-samples/src/master/)
