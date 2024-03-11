@@ -1,0 +1,26 @@
+name: Mirror scriptrunner-samples
+
+on:
+  schedule:
+    # Every day at 5:30 am UTC
+    - cron: '30 5 * * *'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Mirror repository from Bitbucket
+        run: | 
+          git clone --mirror https://bitbucket.org/Adaptavist/scriptrunner-samples.git
+          cd scriptrunner-samples.git
+          git remote set-url --push origin git@github.com:Adaptavist-Bitbucket-Mirror/scriptrunner-samples.git
+          echo "Fetching updates from https://bitbucket.org/Adaptavist/scriptrunner-samples.git"
+          git fetch -p origin
+          echo "Pushing updates to git@github.com:Adaptavist-Bitbucket-Mirror/scriptrunner-samples.git"
+          git push --mirror
