@@ -29,5 +29,5 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh repo edit Adaptavist-Bitbucket-Mirror/scriptrunner-samples --description "Updated on 2024-03-11 from https://bitbucket.org/Adaptavist/scriptrunner-samples.git"
+          gh repo edit scriptrunner-samples --description "Updated on 2024-03-11 from https://bitbucket.org/Adaptavist/scriptrunner-samples.git"
       
