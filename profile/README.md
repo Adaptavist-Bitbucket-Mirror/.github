@@ -12,4 +12,4 @@ Mirroring simplifies tracking changes in Adaptavist's examples. The mirrored rep
 ## Mirrored repositories:
 
 * [scriptrunner-parent-pom](https://bitbucket.org/Adaptavist/scriptrunner-parent-pom) 
-* [scriptrunner-samples](https://bitbucket.org/Adaptavist/scriptrunner-samples) -> [scriptrunner-parent-pom](https://github.com/Adaptavist-Bitbucket-Mirror/scriptrunner-samples)
+* [scriptrunner-samples](https://bitbucket.org/Adaptavist/scriptrunner-samples) -> https://github.com/Adaptavist-Bitbucket-Mirror/scriptrunner-samples
