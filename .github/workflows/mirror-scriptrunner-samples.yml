@@ -24,3 +24,7 @@ jobs:
           git fetch -p origin
           echo "Pushing updates to git@github.com:Adaptavist-Bitbucket-Mirror/scriptrunner-samples.git"
           git push --mirror
+      - name: Update repostitory description
+        run: |
+          gh repo edit Adaptavist-Bitbucket-Mirror/scriptrunner-samples --description "Updated on 2024-03-11 from https://bitbucket.org/Adaptavist/scriptrunner-samples.git"
+      
